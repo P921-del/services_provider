@@ -4,6 +4,7 @@ const { MdHeight } = require('react-icons/md');
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/tw-elements/js/**/*.js"
   ],
   theme: {
     extend: {
@@ -24,8 +25,12 @@ module.exports = {
       animation: {
         textfillfirst: 'textfillfirst 6s linear infinite',
       },
+      backgroundImage: {
+        HeaderRestaurantComponentBackgroundImage: "url('/public/assests/Restaurants/mainComponentBackgroundInRestaurantComponent.jpg')",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tw-elements/plugin.cjs")],
+  darkMode: "class"
 }
 

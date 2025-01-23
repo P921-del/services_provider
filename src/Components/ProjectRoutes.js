@@ -7,9 +7,10 @@ import Projects from './Projects'
 import Hospitals from './Hospitals'
 import Schools from './Schools'
 import Clinics from './Clinics'
-import Restaurants from './Restaurants'
-import Login from './Account Pages/Login'
+import Restaurants from '../Components/Restaurants/Restaurants.tsx'
+import Login from './Account Pages/Login.tsx'
 import Register from './Account Pages/Register.tsx'
+import ForgotPassword from './Account Pages/ForgotPassword.tsx'
 
 
 function ProjectRoutes() {
@@ -27,6 +28,7 @@ function ProjectRoutes() {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signUp" element={<Register />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
             </Routes>
         </>
     )

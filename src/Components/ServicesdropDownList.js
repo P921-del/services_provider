@@ -28,12 +28,14 @@ function ServicesdropDownList(props) {
                 {!isOpen ? (<AiOutlineCaretDown className='h-4' />)
                     : (<AiOutlineCaretUp className='h-4' />)}
             </button>
-            {isOpen && (<div className='z-20 absolute top-20
+            {isOpen && (<div className='z-30 absolute top-20
              flex flex-col items-start
+             
               rounded-lg bg-blue-400 p-2 w-[150px]'>
                 {props.Services.map((item) => {
                     return (
                         <div className="
+                    
                     p-4 w-full flex justify-between
                   hover:bg-blue-300 cursor-pointer rounded-r-lg 
                     border-l-transparent hover:border-l-white border-l-4" key={item.id}>
